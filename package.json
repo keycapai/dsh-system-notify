@@ -1,6 +1,6 @@
 {
   "name": "dsh-system-notify",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Native desktop notification when an agent finishes a turn or waits for you — for DeepSeek Harness.",
   "type": "module",
   "main": "index.js",
