@@ -96,6 +96,10 @@ npm test
 测试只覆盖纯函数那一半（时间格式化、占位符替换、三个平台的转义、配置归一化）——
 真正会出错的地方就是这些转义，而它们不需要真的弹一个通知出来验证。
 
+## 发布
+
+发布由 tag 驱动，详见 [docs/RELEASING.md](./docs/RELEASING.md)。
+
 ## 许可证
 
 [MIT](./LICENSE) © 2026 Keycap AI & Rentong Zhang
