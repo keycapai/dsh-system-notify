@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Dsh SystemNotify",
+    "description": "Sends a system desktop notification when an agent finishes a turn, waits for your input, or a subagent completes. Event choices and the duration threshold live in Settings > General.",
+    "detail": "docs/DETAIL.md"
+  }
+}

@@ -1,0 +1,13 @@
+- insert:
+    - id: dsh-system-notify
+      name: 'dsh-system-notify'
+      config:
+        enabled: true
+        turnDone: true
+        needsYou: true
+        subagentDone: false
+        thresholdMs: 30000
+        sound: true
+        locale: auto
+        icon: ''
+        appName: DeepSeek Harness

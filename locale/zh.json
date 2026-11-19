@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Dsh SystemNotify",
+    "description": "agent 完成一轮回答、等待你介入或子 agent 完成时，发出系统桌面通知。通知事件与耗时阈值在「设置 > 通用」中调整。",
+    "detail": "docs/DETAIL.md"
+  }
+}

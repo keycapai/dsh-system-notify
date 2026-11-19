@@ -1,0 +1,53 @@
+{
+  "name": "dsh-system-notify",
+  "version": "3.0.0",
+  "description": "Native desktop notification when an agent finishes a turn or waits for you — for DeepSeek Harness.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "icon.png",
+    "README.md"
+  ],
+  "icon": "./icon.svg",
+  "author": "keycapai",
+  "license": "MIT",
+  "homepage": "https://github.com/keycapai/dsh-system-notify#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keycapai/dsh-system-notify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/keycapai/dsh-system-notify/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "notifications",
+    "desktop-notification",
+    "agent",
+    "keycapai"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node --test --test-force-exit test/"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
