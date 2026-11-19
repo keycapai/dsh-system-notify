@@ -86,8 +86,14 @@ jobs:
       - name: Pack
         id: pack
         run: |
-          npm pack --json > pack.json
-          TARBALL="$(node -p "require('./pack.json')[0].filename")"
+          # --silent keeps npm's warnings off stdout: with them in the stream the
+          # output is not valid JSON and parsing it dies. --silent prints exactly
+          # the tarball filename and nothing else.
+          TARBALL="$(npm pack --silent)"
+          if [ ! -f "$TARBALL" ]; then
+            echo "::error::npm pack did not produce a tarball (got '$TARBALL')"
+            exit 1
+          fi
           echo "tarball=$TARBALL" >> "$GITHUB_OUTPUT"
           echo "Packed $TARBALL"
 
